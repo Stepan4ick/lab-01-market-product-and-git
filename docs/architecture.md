@@ -6,9 +6,9 @@
 
 ## Main components
 
-![Wildberries Component Diagram](../../docs/diagrams/out/wildberries/architecture-component/Component%20Diagram.svg)
+![Wildberries Component Diagram](../docs/diagrams/out/wildberries/architecture-component/Component%20Diagram.svg)
 
-[Wildberries Component Diagram](../../docs/diagrams/src/wildberries/architecture-component.puml)
+[Wildberries Component Diagram](../docs/diagrams/src/wildberries/architecture-component.puml)
 
 - Auth & ID Service: component for authorization
 - User Profile & Loyalty: component for managment of user's profile
@@ -18,9 +18,9 @@
 
 ## Data flow
 
-![Wildberries Sequence Diagram](../../docs/diagrams/out/wildberries/architecture-sequence/Sequence%20Diagram.svg)
+![Wildberries Sequence Diagram](../docs/diagrams/out/wildberries/architecture-sequence/Sequence%20Diagram.svg)
 
-[Wildberries Sequence Diagram](../../docs/diagrams/src/wildberries/architecture-sequence.puml)
+[Wildberries Sequence Diagram](../docs/diagrams/src/wildberries/architecture-sequence.puml)
 
 This group of actions converts the user’s cart into an order, reserves the required items in stock, and starts the payment process.
 
@@ -36,7 +36,7 @@ The Payment Service communicates with the external **Bank/Acquirer API**, create
 
 Finally, this payment URL is returned through the **Gateway** back to the **Mobile App**, and the user is redirected to complete the payment.
 
-### Components and data exchange
+## Components and data exchange
 
 - Mobile App → Gateway: `cart_id`, `payment_method`
 - Gateway → Order Service: order creation request
@@ -51,9 +51,9 @@ Finally, this payment URL is returned through the **Gateway** back to the **Mobi
 
 ## Deployment
 
-![Wildberries Deployment Diagram](../../docs/diagrams/out/wildberries/architecture-deployment/Deployment%20Diagram.svg)
+![Wildberries Deployment Diagram](../docs/diagrams/out/wildberries/architecture-deployment/Deployment%20Diagram.svg)
 
-[Wildberries Deployment Diagram](../../docs/diagrams/src/wildberries/architecture-deployment.puml)
+[Wildberries Deployment Diagram](../docs/diagrams/src/wildberries/architecture-deployment.puml)
 
 The system is deployed as a distributed cloud-based architecture.
 
