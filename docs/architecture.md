@@ -60,7 +60,6 @@ The system is deployed as a distributed cloud-based architecture.
 Users access the platform through web or mobile clients. Traffic first goes through external layers such as CDN, load balancers, and API gateways.
 
 Core backend services (Cart, Order, Inventory, Payment, Notification, etc.) are deployed inside compute clusters (containers/VMs) in the cloud. These services communicate with each other over internal APIs.
-
 Data is stored in dedicated storage clusters:
 
 - relational databases for transactional data,
